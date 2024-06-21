@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Cadastro de Filmes</title>
+</head>
+<body>
+    <div class="formulario">
+        <h1>Cadastro de Filmes</h1>
+    
+        <div class="campo text">
+            <label for="nomeBr">Nome do filme no Brasil</label>
+            <input type="text" name="nomeBr" id="nomeBr" placeholder="Nome do filme no Brasil">
+        </div>
+
+        <div class="campo text">
+            <label for="nomeOriginal">Nome original do filme </label>
+            <input type="text" name="nomeOriginal" id="nomeOriginal" placeholder="Nome original">
+        </div>
+
+        <div class="campo text">
+            <label for="nomeDiretor">Nome do diretor do filme</label>
+            <input type="text" name="nomeDiretor" id="nomeDiretor" placeholder="Nome do diretor">
+        </div>
+
+        <div class="campo data">
+            <label for="dataEstreia">Data de estreia no cinema</label>
+            <input type="date" name="dataDeEstreia" id="dataDeEstreia">
+        </div>
+
+        <div class="campo">
+            <label for="">Classificação indiciativa</label><br>
+            <input type="radio" name="classificacaoIndicativa" id="livre" checked><label for="livre">Livre</label><br>
+            <input type="radio" name="classificacaoIndicativa" id="10anos"><label for="10anos">10 anos</label><br>
+            <input type="radio" name="classificacaoIndicativa" id="12anos"><label for="12anos">12 anos</label><br>
+            <input type="radio" name="classificacaoIndicativa" id="14anos"><label for="14anos">14 anos</label><br>
+            <input type="radio" name="classificacaoIndicativa" id="16anos"><label for="16anos">16 anos</label><br>
+            <input type="radio" name="classificacaoIndicativa" id="18anos"><label for="18anos">18 anos</label>
+        </div>
+
+        <div class="campo">
+            <label for="">Gênero do filme</label><br>
+            <select name="genero" id="genero">
+                <option value="aventura">Aventura</option>
+                <option value="acao">Ação</option>
+                <option value="animacao">Animação</option>
+                <option value="romance">Romance</option>
+                <option value="musical">Musical</option>
+                <option value="suspense">Suspense</option>
+                <option value="terror">Terror</option>
+                <option value="ficcaoCientifica">Ficção Científica</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="">Idiomas de áudio disponíveis</label><br>
+            <input type="checkbox" class="checkboxes" name="idiomasDeAudio" id="ingles"><label for="ingles">Inglês</label><br>
+            <input type="checkbox" class="checkboxes" name="idiomasDeAudio" id="portugues"><label for="portugues">Português</label><br>
+            <input type="checkbox" class="checkboxes" name="idiomasDeAudio" id="espanhol"><label for="espanhol">Espanhol</label><br>
+            <input type="checkbox" class="checkboxes" name="idiomasDeAudio" id="outros"><label for="outros">Outros</label>
+        </div>
+
+        <div class="campo">
+            <input type="checkbox" class="checkboxes" name="termosDeUso" id="termosDeUso"><label for="termosDeUso">Li e aceito os termos de uso</label>
+        </div>
+
+        <div class="campo">
+            <div class="buttons">
+                <div class="cadastrarButton">
+                    <button id="cadastrarButton" disabled>Cadastrar</button>
+                </div>
+                <div class="filmesCadastrados">
+                    <a href="/cadastrados.html">
+                        <button id="cadastradosButton">Filmes cadastrados</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/javascript/index.js"></script>
+    <script src="/javascript/cadastrados.js"></script>
+</body>
+</html>

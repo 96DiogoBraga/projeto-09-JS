@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    background-color: #42414d;
+}
+
+.formulario{
+    background: url(/images/background1.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 78%;
+    width: max-content;
+    height: min-content;
+    align-content: center;
+    border-radius:10px;
+    border: 10px solid #8f8f9d;
+    padding: 15px;
+
+}
+
+.campo{
+    margin: 1em;
+    font-family: "Roboto", sans-serif;
+}
+.checkboxes{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #8f8f9d;
+    border-radius: 2px;
+    vertical-align: middle;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.checkboxes:checked{
+    background:url("/images/check-mark-1292787.svg") no-repeat;
+    height: 15px;
+    width: 15px;
+}
+
+label{
+    vertical-align: middle;
+}
+
+.text input{
+    font-family: "Roboto", sans-serif;
+    width: 150px;
+    height: 20px;
+    border: 2px solid #8f8f9d;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px 0px #00000057;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.text input::placeholder{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.data input{
+    border:solid #8f8f9d;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+select{
+    border: 2px solid  #8f8f9d;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+#cadastrarButton{
+    padding: 5px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #5d5d68 ;
+    border: 3px solid #8f8f9d;
+    border-radius: 10px;
+    background-color: #e3e3ff;
+}
+#cadastrarButton:hover{
+    background-color:#5d5d68 ;
+    border-color: #b7b7d3;
+    color: #fff;
+}
+
+#cadastrarButton:active{
+    background-color:#5d5d68 ;
+    border: 2px solid;
+    border-color: #b7b7d3;
+    color: #fff;
+}
+
+#cadastrarButton:disabled{
+    color: #5d5d68a8 ;
+    border: 3px solid #8f8f9d6e;
+    border-radius: 10px;
+    background-color: #e3e3ff88;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.filmesCadastrados button{
+    padding: 5px 25px;
+    margin-left: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #5d5d68 ;
+    border: 3px solid #8f8f9d;
+    border-radius: 10px;
+    background-color: #e3e3ff;
+}
+
+.filmesCadastrados button:hover{
+    background-color:#5d5d68 ;
+    border-color: #b7b7d3;
+    color: #fff;
+}
+
+.filmesCadastrados button:active{
+    background-color:#5d5d68 ;
+    border: 2px solid;
+    border-color: #b7b7d3;
+    color: #fff;
+}
